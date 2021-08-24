@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Clickable</title>
+  </head>
+  <body>
+    <style>
+      body {
+        background-color: aliceblue;
+      }
+      .board {
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 500px;
+        height: 500px;
+      }
+      .row {
+        height: 9%;
+      }
+      .col {
+        height: 100%;
+        width: 9%;
+        border: 2px solid black;
+        float: left;
+        font-size: 28px;
+        font-weight: bold;
+        color: black;
+        text-align: center;
+        cursor: pointer;
+        
+      }
+      .title {
+          text-align:center;
+          padding:20px;
+          font-size: 24px;
+      }
+    </style>
+    <script>
+        var turn =1;
+     function playerAction(elem,val){
+        if(turn == 1){
+            elem.innerHTML=val
+            turn =2;
+        }
+        else if(turn ==2){
+            elem.innerHTML=""
+            turn =1;
+        }
+        
+    }
+    </script>
+    <div class="board">
+        <div class="title">Press Grid to See!</div>
+      <div class="row">
+        <div class="col" onclick="playerAction(this,1)"></div>
+        <div class="col"onclick="playerAction(this,2)"></div>
+        <div class="col"onclick="playerAction(this,3)"></div>
+        <div class="col"onclick="playerAction(this,4)"></div>
+        <div class="col"onclick="playerAction(this,5)"></div>
+        <div class="col"onclick="playerAction(this,6)"></div>
+        <div class="col"onclick="playerAction(this,7)"></div>
+        <div class="col"onclick="playerAction(this,8)"></div>
+        <div class="col"onclick="playerAction(this,9)"></div>
+        <div class="col"onclick="playerAction(this,10)"></div>
+      </div>
+      <div class="row">
+        <div class="col" onclick="playerAction(this,11)"></div>
+        <div class="col"onclick="playerAction(this,12)"></div>
+        <div class="col"onclick="playerAction(this,13)"></div>
+        <div class="col"onclick="playerAction(this,14)"></div>
+        <div class="col"onclick="playerAction(this,15)"></div>
+        <div class="col"onclick="playerAction(this,16)"></div>
+        <div class="col"onclick="playerAction(this,17)"></div>
+        <div class="col"onclick="playerAction(this,18)"></div>
+        <div class="col"onclick="playerAction(this,19)"></div>
+        <div class="col"onclick="playerAction(this,20)"></div>
+      </div>
+      <div class="row">
+        <div class="col" onclick="playerAction(this,21)"></div>
+        <div class="col"onclick="playerAction(this,22)"></div>
+        <div class="col"onclick="playerAction(this,23)"></div>
+        <div class="col"onclick="playerAction(this,24)"></div>
+        <div class="col"onclick="playerAction(this,25)"></div>
+        <div class="col"onclick="playerAction(this,26)"></div>
+        <div class="col"onclick="playerAction(this,27)"></div>
+        <div class="col"onclick="playerAction(this,28)"></div>
+        <div class="col"onclick="playerAction(this,29)"></div>
+        <div class="col"onclick="playerAction(this,30)"></div>
+      </div>
+      <div class="row">
+        <div class="col" onclick="playerAction(this,31)"></div>
+        <div class="col"onclick="playerAction(this,32)"></div>
+        <div class="col"onclick="playerAction(this,33)"></div>
+        <div class="col"onclick="playerAction(this,34)"></div>
+        <div class="col"onclick="playerAction(this,35)"></div>
+        <div class="col"onclick="playerAction(this,36)"></div>
+        <div class="col"onclick="playerAction(this,37)"></div>
+        <div class="col"onclick="playerAction(this,38)"></div>
+        <div class="col"onclick="playerAction(this,39)"></div>
+        <div class="col"onclick="playerAction(this,40)"></div>
+      </div>
+      <div class="row">
+        <div class="col" onclick="playerAction(this,41)"></div>
+        <div class="col"onclick="playerAction(this,42)"></div>
+        <div class="col"onclick="playerAction(this,43)"></div>
+        <div class="col"onclick="playerAction(this,44)"></div>
+        <div class="col"onclick="playerAction(this,45)"></div>
+        <div class="col"onclick="playerAction(this,46)"></div>
+        <div class="col"onclick="playerAction(this,47)"></div>
+        <div class="col"onclick="playerAction(this,48)"></div>
+        <div class="col"onclick="playerAction(this,49)"></div>
+        <div class="col"onclick="playerAction(this,50)"></div>
+      </div>
+      <div class="row">
+        <div class="col" onclick="playerAction(this,51)"></div>
+        <div class="col"onclick="playerAction(this,52)"></div>
+        <div class="col"onclick="playerAction(this,53)"></div>
+        <div class="col"onclick="playerAction(this,54)"></div>
+        <div class="col"onclick="playerAction(this,55)"></div>
+        <div class="col"onclick="playerAction(this,56)"></div>
+        <div class="col"onclick="playerAction(this,57)"></div>
+        <div class="col"onclick="playerAction(this,58)"></div>
+        <div class="col"onclick="playerAction(this,59)"></div>
+        <div class="col"onclick="playerAction(this,60)"></div>
+      </div>
+      <div class="row">
+        <div class="col" onclick="playerAction(this,61)"></div>
+        <div class="col"onclick="playerAction(this,62)"></div>
+        <div class="col"onclick="playerAction(this,63)"></div>
+        <div class="col"onclick="playerAction(this,64)"></div>
+        <div class="col"onclick="playerAction(this,65)"></div>
+        <div class="col"onclick="playerAction(this,66)"></div>
+        <div class="col"onclick="playerAction(this,67)"></div>
+        <div class="col"onclick="playerAction(this,68)"></div>
+        <div class="col"onclick="playerAction(this,69)"></div>
+        <div class="col"onclick="playerAction(this,70)"></div>
+      </div>
+      <div class="row">
+        <div class="col" onclick="playerAction(this,71)"></div>
+        <div class="col"onclick="playerAction(this,72)"></div>
+        <div class="col"onclick="playerAction(this,73)"></div>
+        <div class="col"onclick="playerAction(this,74)"></div>
+        <div class="col"onclick="playerAction(this,75)"></div>
+        <div class="col"onclick="playerAction(this,76)"></div>
+        <div class="col"onclick="playerAction(this,77)"></div>
+        <div class="col"onclick="playerAction(this,78)"></div>
+        <div class="col"onclick="playerAction(this,79)"></div>
+        <div class="col"onclick="playerAction(this,80)"></div>
+      </div>
+      <div class="row">
+        <div class="col" onclick="playerAction(this,81)"></div>
+        <div class="col"onclick="playerAction(this,82)"></div>
+        <div class="col"onclick="playerAction(this,83)"></div>
+        <div class="col"onclick="playerAction(this,84)"></div>
+        <div class="col"onclick="playerAction(this,85)"></div>
+        <div class="col"onclick="playerAction(this,86)"></div>
+        <div class="col"onclick="playerAction(this,87)"></div>
+        <div class="col"onclick="playerAction(this,88)"></div>
+        <div class="col"onclick="playerAction(this,89)"></div>
+        <div class="col"onclick="playerAction(this,90)"></div>
+      </div>
+      <div class="row">
+        <div class="col" onclick="playerAction(this,91)"></div>
+        <div class="col"onclick="playerAction(this,92)"></div>
+        <div class="col"onclick="playerAction(this,93)"></div>
+        <div class="col"onclick="playerAction(this,94)"></div>
+        <div class="col"onclick="playerAction(this,95)"></div>
+        <div class="col"onclick="playerAction(this,96)"></div>
+        <div class="col"onclick="playerAction(this,97)"></div>
+        <div class="col"onclick="playerAction(this,98)"></div>
+        <div class="col"onclick="playerAction(this,99)"></div>
+        <div class="col"onclick="playerAction(this,100)"></div>
+      </div>
+      
+      </div>
+    </div>
+  </body>
+</html>
